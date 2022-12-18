@@ -1,13 +1,16 @@
 * {
+  color: #f7f7f7;
   font-family: "Rubik", sans-serif;
-  color: white;
 }
+/* BODY */
 body {
-  background-color: rgb(43, 43, 43);
+  background-color: #222222;
   margin: 0;
 }
+/* HEADER */
+
 .header {
-  background-color: #5da6ff;
+  background-color: #ff3af5;
   position: fixed;
   top: 0;
   width: 100%;
@@ -28,9 +31,12 @@ body {
   text-decoration: none;
   cursor: default;
 }
+/* MAIN */
 .main {
-  margin: 100px 0 0 0;
+  width: 100%;
+  margin-top: 100px;
 }
+/* hero */
 .hero {
   padding: 20px;
   display: grid;
@@ -51,20 +57,33 @@ body {
   font-size: 20px;
 }
 .line {
-  width: 20%;
-  background-color: #26ff6b;
+  width: 60%;
+  background-color: #3aff72;
   margin-top: 10px;
   border-radius: 10px;
+}
+.image {
+  display: inline;
 }
 .hero .image img {
   border-radius: 15%;
   height: 420px;
 }
 .contact {
-  margin-top: 0px;
+  margin-top: 10px;
 }
 .contact iconify-icon {
-  margin: 0 5px 0 0;
+  margin-right: 0 5px 0 0;
+}
+.contact a {
+  color: #393e46;
+  cursor: default;
+}
+.contact a:active {
+  color: #393e46;
+}
+.contact a:visited {
+  color: #393e46;
 }
 .hero button {
   margin-top: 30px;
@@ -73,28 +92,48 @@ body {
   font-size: 16px;
   background-color: rgba(0, 0, 0, 0);
   color: #f7f7f7;
-  border: 2px solid #26ff6b;
+  border: 2px solid #3aff72;
   width: 50%;
 }
+.hero button:hover {
+  background-color: #3aff72;
+  color: #393e46;
+}
+/* ABOUT */
 .about {
   margin-top: 5%;
-  background-color: #26ff6b;
+  background-color: #3aff72;
   padding: 60px 20px;
   cursor: default;
   display: grid;
   grid-template-columns: 30% auto;
   font-size: 20px;
 }
+.about .desc,
+.about .desc p,
+.about .desc table tr td,
+.about h2 {
+  color: #202429;
+  font-weight: normal;
+}
+.about h2 {
+  font-weight: 600;
+  margin-top: 0;
+}
 .about .image img {
   height: 300px;
   border-radius: 15%;
   margin: 0;
+  /* margin-right: 20%; */
 }
-.about p,
-.about h2,
-.about table tr td {
-  color: black;
+.hobby table {
+  margin: 0;
 }
+.hobby table td {
+  width: 100px;
+  text-align: left;
+}
+/* PENDIDIKAN */
 .edu {
   padding: 40px 20px;
   font-size: 20px;
@@ -116,19 +155,20 @@ body {
   height: 300px;
   margin: 0;
 }
+/* SKILL */
 .skill-content {
   display: grid;
-  grid-template-columns: 60% auto;
+  grid-template-columns: 50% auto;
   margin-top: 20px;
 }
 .skill {
-  background-color: #26ff6b;
+  background-color: #3aff72;
   padding: 40px 20px;
   color: #202429;
   font-size: 20px;
 }
 .skill h2,
-.skill table tr td {
+.skill-content table tr td {
   color: #202429;
 }
 .skill-content table {
@@ -146,14 +186,31 @@ body {
   background-color: #ffffff;
 }
 .skill-bar.web {
-  width: 80%;
+  width: 20%;
 }
 .skill-bar.network {
-  width: 25%;
-}
-.skill-bar.design {
   width: 65%;
 }
+.skill-bar.design {
+  width: 30%;
+}
+
+/* materi */
+.materi {
+  background-color;
+  padding: 40px 20px;
+  color: #202429;
+  font-size: 20px;
+}
+.materi table tr td {
+  text-align: left;
+  padding: 10px;
+}
+.materi table tr td p {
+  margin: 0;
+}
+
+/* RESPONSIVE */
 @media screen and (max-width: 768px) {
   .header {
     height: 20px;
